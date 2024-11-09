@@ -15,7 +15,7 @@ const Header = () => {
             <div className={style.container}>
                 <Link to="/Jelly Belly" className={style.logo}>
                     <img src={logo} alt="Jelly Belly" />
-                    <span>Jelly Belly</span>
+                    <span>Jelly-Belly</span>
                 </Link>
                 
             {isMobile ? (<MobileMenu />) : (<DesktopMenu />)}
