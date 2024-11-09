@@ -1,5 +1,5 @@
 .home_container{
-    height: 100%;
+    height: 80vh;
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
@@ -7,7 +7,6 @@
 
 .home_container img{
     width: 100%;
-    height: 100%;
 }
 
 .home_container img:hover{
@@ -45,5 +44,32 @@
     }
     75% {
       transform: rotate(5deg);
+    }
+  }
+
+  @media (width<= 950px){
+    .info h1{
+      font-size: 40px;
+    }
+    .info p{
+      font-size: 18px;
+    }
+  }
+  
+  @media (width<= 750px){
+    .info h1{
+      font-size: 28px;
+    }
+    .info p{
+      font-size: 16px;
+    }
+  }
+
+  @media (width<= 480px){
+    .info h1{
+      font-size: 20px;
+    }
+    .info p{
+      font-size: 14px;
     }
   }

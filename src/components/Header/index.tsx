@@ -13,7 +13,7 @@ const Header = () => {
     return ( 
         <header>
             <div className={style.container}>
-                <Link to="/Jelly Belly" className={style.logo}>
+                <Link to="/Jelly-Belly" className={style.logo}>
                     <img src={logo} alt="Jelly Belly" />
                     <span>Jelly Belly</span>
                 </Link>

@@ -53,7 +53,7 @@ const RecipePage = () => {
             </ul>
         </div>
         <Link 
-        to="/Jelly Belly/recipes/" className="link_back"
+        to="/Jelly-Belly/recipes/" className="link_back"
         >
         Back to recipes &rarr;
         </Link>
