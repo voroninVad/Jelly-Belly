@@ -16,35 +16,35 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/Jelly Belly/",
+        path: "/Jelly-Belly/",
         element: <Home />,
       },
       {
-        path: "/Jelly Belly/beans/",
+        path: "/Jelly-Belly/beans/",
         element: <BeansPages />,
       },
       {
-        path: "/Jelly Belly/facts/",
+        path: "/Jelly-Belly/facts/",
         element: <FactsPage />,
       },
       {
-        path: "/Jelly Belly/recipes/",
+        path: "/Jelly-Belly/recipes/",
         element: <Recipes />,
       },
       {
-        path: "/Jelly Belly/recipe/:id",
+        path: "/Jelly-Belly/recipe/:id",
         element: <RecipePage />,
       },
       {
-        path: "/Jelly Belly/combinations/",
+        path: "/Jelly-Belly/combinations/",
         element: <CombinationsPage />,
       },
       {
-        path: "/Jelly Belly/history/",
+        path: "/Jelly-Belly/history/",
         element: <HistoryPage />,
       },
       {
-        path: "/Jelly Belly/review/",
+        path: "/Jelly-Belly/review/",
         element: <Review />,
       },
       {
