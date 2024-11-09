@@ -1,0 +1,38 @@
+.container__recipe{
+    width: 60%;
+    background-color: #f9f5f4;
+    border-radius: 20px;
+    padding: 50px;
+    color: var(--base-red);
+}
+
+.img_recipe{
+    text-align: center;
+    width: 100%;
+    margin: 48px auto;
+}
+
+.img_recipe img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.container__recipe a {
+    position: relative;
+    display: inline-block;
+}
+
+.container__recipe a:before {
+    background-color: var(--base-red);
+    bottom: -.1rem;
+    content: "";
+    height: .1rem;
+    left: 0;
+    position: absolute;
+    transition: width .3s linear;
+    width: 0;
+}
+
+.container__recipe a:hover::before{
+    width: 100%;
+}

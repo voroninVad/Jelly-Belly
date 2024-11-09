@@ -1,0 +1,11 @@
+.loading{
+    text-align: center;
+}
+
+.loading h1{
+    margin: 10px;
+}
+
+.loading img{
+    width: 200px;
+}

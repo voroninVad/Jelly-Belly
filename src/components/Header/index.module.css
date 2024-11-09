@@ -1,0 +1,36 @@
+.container {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: var(--base-red);
+  text-decoration: none;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.logo img:hover {
+  animation: favicon-shake 0.2s ease-out 2 alternate;
+}
+
+@keyframes favicon-shake {
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
