@@ -8,7 +8,7 @@ type RecipeItem = {
 };
 export const RecipeCard: FC<RecipeItem> = ({ recipeItem }) => {
   return (
-    <Link to={`/Jelly Belly/recipe/${recipeItem.recipeId}`} className={styles.recipe__container}>
+    <Link to={`/Jelly-Belly/recipe/${recipeItem.recipeId}`} className={styles.recipe__container}>
       <img src={recipeItem.imageUrl} alt="" />
       <div className={styles.info}>
         <h3>{recipeItem.name}</h3>
