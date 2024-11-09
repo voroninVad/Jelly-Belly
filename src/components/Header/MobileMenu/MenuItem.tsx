@@ -31,7 +31,7 @@ export const MenuItem:React.FC<Props> = ({ i }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link className="text-placeholder" to={`/Jelly Belly/${i}`}>{i}</Link>
+      <Link className="text-placeholder" to={`/Jelly-Belly/${i}`}>{i}</Link>
     </motion.li>
   );
 };
