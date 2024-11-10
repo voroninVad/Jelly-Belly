@@ -1,10 +1,47 @@
 .form{
     width: 50%;
-    height: 350px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
     align-items: center;
     margin: 150px auto;
-    padding-bottom: 150px;
+    padding: 50px;
+    border: 1px solid var(--base-red);
+    border-radius: 20px;
+}
+
+h4{
+    color: var(--base-red);
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.form button{
+    width: 20%;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.form button::before {
+    background-color: var(--base-red);
+    bottom: -.1rem;
+    content: "";
+    height: .1rem;
+    left: 0;
+    position: absolute;
+    transition: width .3s linear;
+    width: 0;
+}
+
+.form button:hover::before{
+    width: 100%;
 }

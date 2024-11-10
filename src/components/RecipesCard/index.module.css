@@ -29,6 +29,7 @@
     height: fit-content;
     padding: 10px;
     text-align: left;
+    z-index: -1;
   }
   
   .description {

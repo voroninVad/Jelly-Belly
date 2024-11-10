@@ -12,12 +12,11 @@ type FormType = {
 };
 
 const Review = () => {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(1);
 
-  const { register, handleSubmit } = useForm<FormType>();
+  const { register, handleSubmit, reset} = useForm<FormType>();
 
   const onSubmit: SubmitHandler<FormType> = async (data) => {
-    console.log(data);
     data.stars = rating;
     try {
       const response = await fetch(
@@ -33,6 +32,8 @@ const Review = () => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
+      reset()
+      setRating(0)
     } catch (error: unknown) {
       if(error instanceof Error){
         console.error("Error fetching:", error.message);
@@ -44,7 +45,6 @@ const Review = () => {
 
   return (
     <>
-      <ReviewCard />
       <form
         className={style.form}
         action=""
@@ -54,14 +54,16 @@ const Review = () => {
         <h4>Leave your feedback</h4>
         <label htmlFor="">
           Name<br/>
-          <input type="text" {...register("name", { required: true })} id="" />
+          <input type="text"  {...register("name", { required: true })} id="" />
         </label>
         Stars:
         <Stars setRating={setRating} />
         Comment
-        <textarea {...register("comment", { required: true })} id=""></textarea>
-        <input type="submit" value="Send" />
+        <textarea  {...register("comment", { required: true })} rows={300} cols={50}></textarea>
+        <button type="submit">Send</button>
+        <input type="submit" value="send" />
       </form>
+      <ReviewCard />
     </>
   );
 };

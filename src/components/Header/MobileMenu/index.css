@@ -14,7 +14,7 @@
     background: #fff;
   }
   
-  button {
+  .menu__mobile button {
     outline: none;
     border: none;
     -webkit-user-select: none;
