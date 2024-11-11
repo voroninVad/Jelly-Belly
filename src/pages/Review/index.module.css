@@ -1,3 +1,9 @@
+.reviews_page{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .form{
     width: 50%;
     height: 500px;
@@ -7,41 +13,49 @@
     gap: 20px;
     align-items: center;
     margin: 150px auto;
-    padding: 50px;
+    padding: 20px;
     border: 1px solid var(--base-red);
     border-radius: 20px;
 }
 
-h4{
+.reviews_page h4{
     color: var(--base-red);
     font-size: 38px;
     font-weight: 500;
     margin: 0;
 }
 
-.form button{
+.form input[type="submit"]{
     width: 20%;
-    padding: 0;
+    padding: 10px 0;
+    margin-top: 15px;
     border: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
-    position: relative;
-    display: inline-block;
     cursor: pointer;
-}
-
-.form button::before {
+    color: #FFF;
     background-color: var(--base-red);
-    bottom: -.1rem;
-    content: "";
-    height: .1rem;
-    left: 0;
-    position: absolute;
-    transition: width .3s linear;
-    width: 0;
+    border-radius: 20px;
 }
 
-.form button:hover::before{
-    width: 100%;
-}
+@media (width<= 950px){
+    .form{
+        margin: 80px auto;
+    }
+  }
+  
+  @media (width<= 750px){
+    .form{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+  }
+  
+  @media (width<= 480px){
+    .form{
+        margin: 0;
+        gap: 10px;
+    }
+  }

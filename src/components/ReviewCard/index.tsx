@@ -39,7 +39,6 @@ const ReviwCard = () => {
   }, []);
   return (
     <div className={style.reveiws__container}>
-      <h1>Reviews ...</h1>
       <svg id={style.progress} width="100" height="100" viewBox="0 0 100 100">
         <circle cx="50" cy="50" r="30" pathLength="1" className={style.bg} />
         <motion.circle
